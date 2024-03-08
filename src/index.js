@@ -28,7 +28,7 @@ const dirPath = path.join(__dirname, 'temp1', fileName );
 console.log("pathname", dirPath);
 console.log("fileName", fileName);
 
-// Synchronous Pattern
+// Asynchronous Pattern
 //  fs.writeFile(dirPath, data, (err) => {
 //     if (err) {
 //         console.error('Error creating file:', err);
@@ -37,7 +37,7 @@ console.log("fileName", fileName);
 //     }
 // })
 
-// Asynchronous pattern
+// Synchronous pattern
 try {
     fs.writeFileSync(dirPath, data, {flag:'a+'})
     console.log('File created successfully.'.yellow.bold);
